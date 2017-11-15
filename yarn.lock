@@ -6,7 +6,7 @@
   version "2.0.45"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/async/-/async-2.0.45.tgz#0cfe971d7ed5542695740338e0455c91078a0e83"
 
-"@types/zen-observable@^0.5.3":
+"@types/zen-observable@0.5.3", "@types/zen-observable@^0.5.3":
   version "0.5.3"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/zen-observable/-/zen-observable-0.5.3.tgz#91b728599544efbb7386d8b6633693a3c2e7ade5"
 
@@ -176,19 +176,75 @@ apollo-client@^2.0.2:
   optionalDependencies:
     "@types/async" "2.0.45"
 
+apollo-fetch@^0.6.0:
+  version "0.6.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-fetch/-/apollo-fetch-0.6.0.tgz#aae9b28c117af344b091ec8ba4d1a5aa0474dc5d"
+  dependencies:
+    isomorphic-fetch "^2.2.1"
+
+apollo-link-batch-http@1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-batch-http/-/apollo-link-batch-http-1.0.1.tgz#81ea211303b410afaefbf8c6d9f37053d75454ea"
+  dependencies:
+    apollo-fetch "^0.6.0"
+    apollo-link-batch "^1.0.1"
+    graphql "^0.11.0"
+
+apollo-link-batch@1.0.1, apollo-link-batch@^1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-batch/-/apollo-link-batch-1.0.1.tgz#b3c336f117dfa981a02b3963c166dc140b073dbd"
+
+apollo-link-context@1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-context/-/apollo-link-context-1.0.1.tgz#a1a0a53c80abae36fe9cf3685360e0b9c1bb312f"
+
 apollo-link-dedup@1.0.0:
   version "1.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-dedup/-/apollo-link-dedup-1.0.0.tgz#f0134ac495cc42e7e43dfafe7126645baa1e03bc"
 
+apollo-link-dedup@1.0.2:
+  version "1.0.2"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-dedup/-/apollo-link-dedup-1.0.2.tgz#bab659dde41f8dd627839142d4dad90e55251110"
+
+apollo-link-error@1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-error/-/apollo-link-error-1.0.1.tgz#c0185d95477318f029900aff3bdf07853d19e442"
+
 apollo-link-http@1.1.0:
   version "1.1.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-http/-/apollo-link-http-1.1.0.tgz#a85cc43d9a5286bb54ac32213f7a16bef3554ae4"
+
+apollo-link-http@1.2.0:
+  version "1.2.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-http/-/apollo-link-http-1.2.0.tgz#48464c2ebfa6474f7a89908696827d66b2deb5cc"
+
+apollo-link-polling@1.0.1:
+  version "1.0.0"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-polling/-/apollo-link-polling-1.0.0.tgz#acda758be94a89d4d5cf3e028fee3ff1f1c200ed"
+
+apollo-link-retry@1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-retry/-/apollo-link-retry-1.0.1.tgz#c846e4dd2b7c808036ffa32e4e4d1aba13af55fc"
+  dependencies:
+    "@types/zen-observable" "0.5.3"
+
+apollo-link-ws@1.0.1:
+  version "1.0.1"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link-ws/-/apollo-link-ws-1.0.1.tgz#305f6cf1338b5c86a06644dcf77bf59455df1db9"
 
 apollo-link@1.0.0, apollo-link@^1.0.0:
   version "1.0.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link/-/apollo-link-1.0.0.tgz#3d334285789c217f95712ebce434d56ce7f3e991"
   dependencies:
     apollo-utilities "^0.2.0-beta.0"
+    zen-observable "^0.6.0"
+
+apollo-link@1.0.3:
+  version "1.0.3"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/apollo-link/-/apollo-link-1.0.3.tgz#759c36abeeb99e227eca45f919ee07fb8fee911e"
+  dependencies:
+    "@types/zen-observable" "0.5.3"
+    apollo-utilities "^1.0.0"
     zen-observable "^0.6.0"
 
 apollo-utilities@^0.2.0-beta.0:
@@ -2875,7 +2931,7 @@ graphql-tag@^2.4.2, graphql-tag@^2.5.0:
   version "2.5.0"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/graphql-tag/-/graphql-tag-2.5.0.tgz#b43bfd8b5babcd2c205ad680c03e98b238934e0f"
 
-graphql@^0.11.7:
+graphql@^0.11.0, graphql@^0.11.7:
   version "0.11.7"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/graphql/-/graphql-0.11.7.tgz#e5abaa9cb7b7cccb84e9f0836bf4370d268750c6"
   dependencies:
@@ -3478,7 +3534,7 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
-isomorphic-fetch@^2.1.1:
+isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
   version "2.2.1"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
